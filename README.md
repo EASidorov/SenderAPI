@@ -15,7 +15,20 @@ pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
 ```
+#### Создать env
+```shell
+touch /SenderAPI/.env 
+touch /sms_sender/.env
+```
 
+#### /SenderAPI/.env
+```shell
+SECRET_KEY='ваш секретный ключ'
+```
+#### /sms_sender/.env
+```shell
+TOKEN='ваш токен'
+```
 #### Запустить:
 ```shell
 python manage.py runserver
